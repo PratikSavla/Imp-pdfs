@@ -1,0 +1,1293 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 14.1
+-- Dumped by pg_dump version 14.1
+
+-- Started on 2022-06-18 17:23:01
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3486 (class 0 OID 17540)
+-- Dependencies: 229
+-- Data for Name: big_five_answer; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.big_five_answer (id, answer, date_time_added, date_time_answered, question_id, user_id) FROM stdin;
+46	1	2022-03-19 15:00:23.424433	2022-03-27 16:01:17.757698	1	16
+90	\N	2022-03-27 14:32:33.19284	\N	1	17
+91	\N	2022-03-27 14:32:33.19284	\N	2	17
+92	\N	2022-03-27 14:32:33.19284	\N	3	17
+93	\N	2022-03-27 14:32:33.19284	\N	4	17
+94	\N	2022-03-27 14:32:33.19284	\N	5	17
+95	\N	2022-03-27 14:32:33.19284	\N	6	17
+96	\N	2022-03-27 14:32:33.193841	\N	7	17
+97	\N	2022-03-27 14:32:33.193841	\N	8	17
+98	\N	2022-03-27 14:32:33.193841	\N	9	17
+99	\N	2022-03-27 14:32:33.193841	\N	10	17
+100	\N	2022-03-27 14:32:33.193841	\N	11	17
+101	\N	2022-03-27 14:32:33.193841	\N	12	17
+102	\N	2022-03-27 14:32:33.193841	\N	13	17
+103	\N	2022-03-27 14:32:33.193841	\N	14	17
+104	\N	2022-03-27 14:32:33.193841	\N	15	17
+105	\N	2022-03-27 14:32:33.193841	\N	16	17
+106	\N	2022-03-27 14:32:33.193841	\N	17	17
+107	\N	2022-03-27 14:32:33.193841	\N	18	17
+108	\N	2022-03-27 14:32:33.193841	\N	19	17
+109	\N	2022-03-27 14:32:33.193841	\N	20	17
+110	\N	2022-03-27 14:32:33.193841	\N	21	17
+111	\N	2022-03-27 14:32:33.193841	\N	22	17
+112	\N	2022-03-27 14:32:33.193841	\N	23	17
+113	\N	2022-03-27 14:32:33.193841	\N	24	17
+114	\N	2022-03-27 14:32:33.193841	\N	25	17
+115	\N	2022-03-27 14:32:33.193841	\N	26	17
+116	\N	2022-03-27 14:32:33.193841	\N	27	17
+117	\N	2022-03-27 14:32:33.193841	\N	28	17
+118	\N	2022-03-27 14:32:33.193841	\N	29	17
+119	\N	2022-03-27 14:32:33.193841	\N	30	17
+120	\N	2022-03-27 14:32:33.193841	\N	31	17
+121	\N	2022-03-27 14:32:33.193841	\N	32	17
+122	\N	2022-03-27 14:32:33.193841	\N	33	17
+123	\N	2022-03-27 14:32:33.193841	\N	34	17
+124	\N	2022-03-27 14:32:33.193841	\N	35	17
+125	\N	2022-03-27 14:32:33.193841	\N	36	17
+126	\N	2022-03-27 14:32:33.193841	\N	37	17
+127	\N	2022-03-27 14:32:33.193841	\N	38	17
+128	\N	2022-03-27 14:32:33.193841	\N	39	17
+129	\N	2022-03-27 14:32:33.193841	\N	40	17
+130	\N	2022-03-27 14:32:33.193841	\N	41	17
+131	\N	2022-03-27 14:32:33.193841	\N	42	17
+132	\N	2022-03-27 14:32:33.193841	\N	43	17
+133	\N	2022-03-27 14:32:33.193841	\N	44	17
+47	4	2022-03-19 15:00:23.424433	2022-03-27 16:01:46.377325	2	16
+48	5	2022-03-19 15:00:23.424433	2022-03-27 16:01:51.827325	3	16
+49	3	2022-03-19 15:00:23.424433	2022-03-27 16:01:55.734326	4	16
+50	5	2022-03-19 15:00:23.424433	2022-03-27 16:01:59.337323	5	16
+51	4	2022-03-19 15:00:23.424433	2022-03-27 16:02:03.839789	6	16
+52	1	2022-03-19 15:00:23.424433	2022-03-27 16:02:08.471598	7	16
+53	2	2022-03-19 15:00:23.424433	2022-03-27 16:02:13.087914	8	16
+54	3	2022-03-19 15:00:23.424433	2022-03-27 16:02:16.388903	9	16
+55	5	2022-03-19 15:00:23.424433	2022-03-27 16:02:20.020523	10	16
+56	3	2022-03-19 15:00:23.424433	2022-03-27 16:02:22.933444	11	16
+57	3	2022-03-19 15:00:23.424433	2022-03-27 16:02:26.605954	12	16
+58	4	2022-03-19 15:00:23.424433	2022-03-27 16:02:30.617827	13	16
+59	3	2022-03-19 15:00:23.424433	2022-03-27 16:02:33.814284	14	16
+60	5	2022-03-19 15:00:23.424433	2022-03-27 16:02:36.870459	15	16
+61	4	2022-03-19 15:00:23.424433	2022-03-27 16:02:40.239474	16	16
+62	2	2022-03-19 15:00:23.424433	2022-03-27 16:02:46.827139	17	16
+63	1	2022-03-19 15:00:23.424433	2022-03-27 16:02:50.851453	18	16
+64	5	2022-03-19 15:00:23.424433	2022-03-27 16:02:54.434963	19	16
+65	5	2022-03-19 15:00:23.424433	2022-03-27 16:02:57.604358	20	16
+66	4	2022-03-19 15:00:23.424433	2022-03-27 16:03:00.737141	21	16
+67	3	2022-03-19 15:00:23.424433	2022-03-27 16:03:03.753411	22	16
+68	5	2022-03-19 15:00:23.424433	2022-03-27 16:03:05.736384	23	16
+69	3	2022-03-19 15:00:23.424433	2022-03-27 16:03:15.050829	24	16
+70	5	2022-03-19 15:00:23.424433	2022-03-27 16:03:21.304302	25	16
+71	3	2022-03-19 15:00:23.424433	2022-03-27 16:03:24.821073	26	16
+72	2	2022-03-19 15:00:23.424433	2022-03-27 16:03:28.147569	27	16
+73	4	2022-03-19 15:00:23.424433	2022-03-27 16:03:31.600106	28	16
+74	3	2022-03-19 15:00:23.424433	2022-03-27 16:03:35.688376	29	16
+75	5	2022-03-19 15:00:23.424433	2022-03-27 16:03:38.18321	30	16
+76	5	2022-03-19 15:00:23.424433	2022-03-27 16:03:39.951179	31	16
+77	2	2022-03-19 15:00:23.424433	2022-03-27 16:03:44.570325	32	16
+78	4	2022-03-19 15:00:23.424433	2022-03-27 16:03:48.850166	33	16
+79	3	2022-03-19 15:00:23.424433	2022-03-27 16:03:57.957164	34	16
+88	3	2022-03-19 15:00:23.424433	2022-03-30 17:19:44.752362	43	16
+81	1	2022-03-19 15:00:23.424433	2022-03-27 16:04:10.737585	36	16
+134	\N	2022-05-22 10:44:24.520221	\N	1	5
+135	\N	2022-05-22 10:44:24.520221	\N	2	5
+136	\N	2022-05-22 10:44:24.520221	\N	3	5
+137	\N	2022-05-22 10:44:24.520221	\N	4	5
+138	\N	2022-05-22 10:44:24.520221	\N	5	5
+139	\N	2022-05-22 10:44:24.520221	\N	6	5
+140	\N	2022-05-22 10:44:24.520221	\N	7	5
+89	5	2022-03-19 15:00:23.424433	2022-03-27 16:04:45.833042	44	16
+141	\N	2022-05-22 10:44:24.520221	\N	8	5
+142	\N	2022-05-22 10:44:24.520221	\N	9	5
+143	\N	2022-05-22 10:44:24.520221	\N	10	5
+144	\N	2022-05-22 10:44:24.520221	\N	11	5
+145	\N	2022-05-22 10:44:24.520221	\N	12	5
+146	\N	2022-05-22 10:44:24.520221	\N	13	5
+147	\N	2022-05-22 10:44:24.520221	\N	14	5
+80	5	2022-03-19 15:00:23.424433	2022-03-30 17:19:32.863391	35	16
+82	2	2022-03-19 15:00:23.424433	2022-03-30 17:19:36.358459	37	16
+83	4	2022-03-19 15:00:23.424433	2022-03-30 17:19:38.718325	38	16
+84	3	2022-03-19 15:00:23.424433	2022-03-30 17:19:41.53541	39	16
+85	3	2022-03-19 15:00:23.424433	2022-03-30 17:19:42.371567	40	16
+87	3	2022-03-19 15:00:23.424433	2022-03-30 17:19:43.302511	42	16
+86	3	2022-03-19 15:00:23.424433	2022-03-30 17:19:44.107496	41	16
+148	\N	2022-05-22 10:44:24.520221	\N	15	5
+149	\N	2022-05-22 10:44:24.520221	\N	16	5
+150	\N	2022-05-22 10:44:24.520221	\N	17	5
+151	\N	2022-05-22 10:44:24.520221	\N	18	5
+152	\N	2022-05-22 10:44:24.520221	\N	19	5
+153	\N	2022-05-22 10:44:24.520221	\N	20	5
+154	\N	2022-05-22 10:44:24.520221	\N	21	5
+155	\N	2022-05-22 10:44:24.520221	\N	22	5
+156	\N	2022-05-22 10:44:24.520221	\N	23	5
+157	\N	2022-05-22 10:44:24.520221	\N	24	5
+158	\N	2022-05-22 10:44:24.520221	\N	25	5
+159	\N	2022-05-22 10:44:24.520221	\N	26	5
+160	\N	2022-05-22 10:44:24.520221	\N	27	5
+161	\N	2022-05-22 10:44:24.520221	\N	28	5
+162	\N	2022-05-22 10:44:24.520221	\N	29	5
+163	\N	2022-05-22 10:44:24.520221	\N	30	5
+164	\N	2022-05-22 10:44:24.520221	\N	31	5
+165	\N	2022-05-22 10:44:24.520221	\N	32	5
+166	\N	2022-05-22 10:44:24.520221	\N	33	5
+167	\N	2022-05-22 10:44:24.520221	\N	34	5
+168	\N	2022-05-22 10:44:24.520221	\N	35	5
+169	\N	2022-05-22 10:44:24.520221	\N	36	5
+170	\N	2022-05-22 10:44:24.520221	\N	37	5
+171	\N	2022-05-22 10:44:24.520221	\N	38	5
+172	\N	2022-05-22 10:44:24.520221	\N	39	5
+173	\N	2022-05-22 10:44:24.520221	\N	40	5
+174	\N	2022-05-22 10:44:24.520221	\N	41	5
+175	\N	2022-05-22 10:44:24.520221	\N	42	5
+176	\N	2022-05-22 10:44:24.520221	\N	43	5
+177	\N	2022-05-22 10:44:24.520221	\N	44	5
+178	\N	2022-05-22 10:44:24.609222	\N	1	1
+179	\N	2022-05-22 10:44:24.609222	\N	2	1
+180	\N	2022-05-22 10:44:24.609222	\N	3	1
+181	\N	2022-05-22 10:44:24.609222	\N	4	1
+182	\N	2022-05-22 10:44:24.609222	\N	5	1
+183	\N	2022-05-22 10:44:24.609222	\N	6	1
+184	\N	2022-05-22 10:44:24.609222	\N	7	1
+185	\N	2022-05-22 10:44:24.609222	\N	8	1
+186	\N	2022-05-22 10:44:24.609222	\N	9	1
+187	\N	2022-05-22 10:44:24.609222	\N	10	1
+188	\N	2022-05-22 10:44:24.609222	\N	11	1
+189	\N	2022-05-22 10:44:24.609222	\N	12	1
+190	\N	2022-05-22 10:44:24.609222	\N	13	1
+191	\N	2022-05-22 10:44:24.609222	\N	14	1
+192	\N	2022-05-22 10:44:24.609222	\N	15	1
+193	\N	2022-05-22 10:44:24.609222	\N	16	1
+194	\N	2022-05-22 10:44:24.609222	\N	17	1
+195	\N	2022-05-22 10:44:24.609222	\N	18	1
+196	\N	2022-05-22 10:44:24.609222	\N	19	1
+197	\N	2022-05-22 10:44:24.609222	\N	20	1
+198	\N	2022-05-22 10:44:24.609222	\N	21	1
+199	\N	2022-05-22 10:44:24.609222	\N	22	1
+200	\N	2022-05-22 10:44:24.609222	\N	23	1
+201	\N	2022-05-22 10:44:24.609222	\N	24	1
+202	\N	2022-05-22 10:44:24.609222	\N	25	1
+203	\N	2022-05-22 10:44:24.609222	\N	26	1
+204	\N	2022-05-22 10:44:24.609222	\N	27	1
+205	\N	2022-05-22 10:44:24.609222	\N	28	1
+206	\N	2022-05-22 10:44:24.609222	\N	29	1
+207	\N	2022-05-22 10:44:24.609222	\N	30	1
+208	\N	2022-05-22 10:44:24.609222	\N	31	1
+209	\N	2022-05-22 10:44:24.609222	\N	32	1
+210	\N	2022-05-22 10:44:24.609222	\N	33	1
+211	\N	2022-05-22 10:44:24.609222	\N	34	1
+212	\N	2022-05-22 10:44:24.609222	\N	35	1
+213	\N	2022-05-22 10:44:24.609222	\N	36	1
+214	\N	2022-05-22 10:44:24.609222	\N	37	1
+215	\N	2022-05-22 10:44:24.609222	\N	38	1
+216	\N	2022-05-22 10:44:24.609222	\N	39	1
+217	\N	2022-05-22 10:44:24.609222	\N	40	1
+218	\N	2022-05-22 10:44:24.609222	\N	41	1
+219	\N	2022-05-22 10:44:24.609222	\N	42	1
+220	\N	2022-05-22 10:44:24.609222	\N	43	1
+221	\N	2022-05-22 10:44:24.609222	\N	44	1
+266	\N	2022-05-22 10:44:24.706219	\N	1	3
+267	\N	2022-05-22 10:44:24.706219	\N	2	3
+268	\N	2022-05-22 10:44:24.706219	\N	3	3
+269	\N	2022-05-22 10:44:24.706219	\N	4	3
+270	\N	2022-05-22 10:44:24.706219	\N	5	3
+271	\N	2022-05-22 10:44:24.706219	\N	6	3
+272	\N	2022-05-22 10:44:24.706219	\N	7	3
+273	\N	2022-05-22 10:44:24.706219	\N	8	3
+274	\N	2022-05-22 10:44:24.706219	\N	9	3
+275	\N	2022-05-22 10:44:24.706219	\N	10	3
+276	\N	2022-05-22 10:44:24.706219	\N	11	3
+277	\N	2022-05-22 10:44:24.706219	\N	12	3
+278	\N	2022-05-22 10:44:24.706219	\N	13	3
+279	\N	2022-05-22 10:44:24.706219	\N	14	3
+280	\N	2022-05-22 10:44:24.706219	\N	15	3
+281	\N	2022-05-22 10:44:24.706219	\N	16	3
+282	\N	2022-05-22 10:44:24.706219	\N	17	3
+283	\N	2022-05-22 10:44:24.706219	\N	18	3
+284	\N	2022-05-22 10:44:24.706219	\N	19	3
+285	\N	2022-05-22 10:44:24.706219	\N	20	3
+286	\N	2022-05-22 10:44:24.706219	\N	21	3
+287	\N	2022-05-22 10:44:24.706219	\N	22	3
+288	\N	2022-05-22 10:44:24.706219	\N	23	3
+289	\N	2022-05-22 10:44:24.706219	\N	24	3
+290	\N	2022-05-22 10:44:24.706219	\N	25	3
+291	\N	2022-05-22 10:44:24.706219	\N	26	3
+292	\N	2022-05-22 10:44:24.706219	\N	27	3
+293	\N	2022-05-22 10:44:24.706219	\N	28	3
+294	\N	2022-05-22 10:44:24.706219	\N	29	3
+295	\N	2022-05-22 10:44:24.706219	\N	30	3
+296	\N	2022-05-22 10:44:24.707219	\N	31	3
+297	\N	2022-05-22 10:44:24.707219	\N	32	3
+298	\N	2022-05-22 10:44:24.707219	\N	33	3
+237	4	2022-05-22 10:44:24.65622	2022-05-22 15:43:44.790709	16	2
+239	1	2022-05-22 10:44:24.65622	2022-05-22 15:43:52.289269	18	2
+240	4	2022-05-22 10:44:24.65622	2022-05-22 15:43:55.307749	19	2
+241	5	2022-05-22 10:44:24.65622	2022-05-22 15:43:57.255806	20	2
+243	3	2022-05-22 10:44:24.65622	2022-05-22 15:44:02.595852	22	2
+244	5	2022-05-22 10:44:24.657219	2022-05-22 15:44:04.836708	23	2
+245	1	2022-05-22 10:44:24.657219	2022-05-22 15:44:08.341138	24	2
+247	3	2022-05-22 10:44:24.657219	2022-05-22 15:44:13.539345	26	2
+248	4	2022-05-22 10:44:24.657219	2022-05-22 15:44:17.504869	27	2
+249	5	2022-05-22 10:44:24.657219	2022-05-22 15:44:22.641974	28	2
+251	5	2022-05-22 10:44:24.657219	2022-05-22 15:44:29.026858	30	2
+252	5	2022-05-22 10:44:24.657219	2022-05-22 15:44:31.204301	31	2
+254	4	2022-05-22 10:44:24.657219	2022-05-22 15:44:40.920812	33	2
+255	2	2022-05-22 10:44:24.657219	2022-05-22 15:44:43.693191	34	2
+256	1	2022-05-22 10:44:24.657219	2022-05-22 15:44:48.370996	35	2
+258	4	2022-05-22 10:44:24.657219	2022-05-22 15:44:55.855524	37	2
+259	3	2022-05-22 10:44:24.657219	2022-05-22 15:44:59.27588	38	2
+260	5	2022-05-22 10:44:24.657219	2022-05-22 15:45:01.021604	39	2
+262	2	2022-05-22 10:44:24.657219	2022-05-22 15:45:05.939528	41	2
+263	3	2022-05-22 10:44:24.657219	2022-05-22 15:45:11.655584	42	2
+264	2	2022-05-22 10:44:24.657219	2022-05-22 15:45:16.229135	43	2
+224	5	2022-05-22 10:44:24.65622	2022-03-22 15:42:57.576222	3	2
+299	\N	2022-05-22 10:44:24.707219	\N	34	3
+300	\N	2022-05-22 10:44:24.707219	\N	35	3
+301	\N	2022-05-22 10:44:24.707219	\N	36	3
+302	\N	2022-05-22 10:44:24.707219	\N	37	3
+303	\N	2022-05-22 10:44:24.707219	\N	38	3
+304	\N	2022-05-22 10:44:24.707219	\N	39	3
+305	\N	2022-05-22 10:44:24.707219	\N	40	3
+306	\N	2022-05-22 10:44:24.707219	\N	41	3
+307	\N	2022-05-22 10:44:24.707219	\N	42	3
+308	\N	2022-05-22 10:44:24.707219	\N	43	3
+309	\N	2022-05-22 10:44:24.707219	\N	44	3
+310	\N	2022-05-22 10:44:24.74822	\N	1	16
+311	\N	2022-05-22 10:44:24.74822	\N	2	16
+312	\N	2022-05-22 10:44:24.74822	\N	3	16
+313	\N	2022-05-22 10:44:24.74822	\N	4	16
+314	\N	2022-05-22 10:44:24.74822	\N	5	16
+315	\N	2022-05-22 10:44:24.74822	\N	6	16
+316	\N	2022-05-22 10:44:24.74822	\N	7	16
+317	\N	2022-05-22 10:44:24.74822	\N	8	16
+318	\N	2022-05-22 10:44:24.74822	\N	9	16
+319	\N	2022-05-22 10:44:24.74822	\N	10	16
+320	\N	2022-05-22 10:44:24.74822	\N	11	16
+321	\N	2022-05-22 10:44:24.74822	\N	12	16
+322	\N	2022-05-22 10:44:24.74822	\N	13	16
+323	\N	2022-05-22 10:44:24.74822	\N	14	16
+324	\N	2022-05-22 10:44:24.74822	\N	15	16
+325	\N	2022-05-22 10:44:24.74822	\N	16	16
+326	\N	2022-05-22 10:44:24.74822	\N	17	16
+327	\N	2022-05-22 10:44:24.74822	\N	18	16
+328	\N	2022-05-22 10:44:24.74822	\N	19	16
+329	\N	2022-05-22 10:44:24.74822	\N	20	16
+330	\N	2022-05-22 10:44:24.74822	\N	21	16
+331	\N	2022-05-22 10:44:24.74822	\N	22	16
+332	\N	2022-05-22 10:44:24.74822	\N	23	16
+333	\N	2022-05-22 10:44:24.74822	\N	24	16
+334	\N	2022-05-22 10:44:24.74822	\N	25	16
+335	\N	2022-05-22 10:44:24.74822	\N	26	16
+336	\N	2022-05-22 10:44:24.74822	\N	27	16
+337	\N	2022-05-22 10:44:24.74822	\N	28	16
+338	\N	2022-05-22 10:44:24.74822	\N	29	16
+339	\N	2022-05-22 10:44:24.74822	\N	30	16
+340	\N	2022-05-22 10:44:24.74822	\N	31	16
+341	\N	2022-05-22 10:44:24.74822	\N	32	16
+342	\N	2022-05-22 10:44:24.74822	\N	33	16
+343	\N	2022-05-22 10:44:24.74822	\N	34	16
+344	\N	2022-05-22 10:44:24.74822	\N	35	16
+345	\N	2022-05-22 10:44:24.74822	\N	36	16
+346	\N	2022-05-22 10:44:24.74822	\N	37	16
+347	\N	2022-05-22 10:44:24.74822	\N	38	16
+348	\N	2022-05-22 10:44:24.74822	\N	39	16
+349	\N	2022-05-22 10:44:24.74822	\N	40	16
+350	\N	2022-05-22 10:44:24.74822	\N	41	16
+351	\N	2022-05-22 10:44:24.74822	\N	42	16
+352	\N	2022-05-22 10:44:24.74822	\N	43	16
+353	\N	2022-05-22 10:44:24.74822	\N	44	16
+238	2	2022-05-22 10:44:24.65622	2022-05-22 15:43:48.858184	17	2
+242	5	2022-05-22 10:44:24.65622	2022-05-22 15:43:59.823061	21	2
+246	5	2022-05-22 10:44:24.657219	2022-05-22 15:44:10.924422	25	2
+250	4	2022-05-22 10:44:24.657219	2022-05-22 15:44:24.92357	29	2
+253	3	2022-05-22 10:44:24.657219	2022-05-22 15:44:38.078237	32	2
+257	1	2022-05-22 10:44:24.657219	2022-05-22 15:44:51.359947	36	2
+261	5	2022-05-22 10:44:24.657219	2022-05-22 15:45:03.522864	40	2
+265	4	2022-05-22 10:44:24.657219	2022-05-22 15:45:22.204927	44	2
+222	3	2022-05-22 10:44:24.65622	2022-03-22 11:24:51.584201	1	2
+223	4	2022-05-22 10:44:24.65622	2022-03-22 15:42:51.485118	2	2
+225	3	2022-05-22 10:44:24.65622	2022-03-22 15:43:02.411684	4	2
+226	5	2022-05-22 10:44:24.65622	2022-03-22 15:43:06.510209	5	2
+227	3	2022-05-22 10:44:24.65622	2022-04-22 15:43:10.960203	6	2
+228	1	2022-05-22 10:44:24.65622	2022-04-22 15:43:14.465197	7	2
+229	1	2022-05-22 10:44:24.65622	2022-04-22 15:43:18.155295	8	2
+230	2	2022-05-22 10:44:24.65622	2022-04-22 15:43:20.644838	9	2
+231	4	2022-05-22 10:44:24.65622	2022-04-22 15:43:23.572362	10	2
+232	3	2022-05-22 10:44:24.65622	2022-02-22 15:43:27.194243	11	2
+233	4	2022-05-22 10:44:24.65622	2022-02-22 15:43:30.79501	12	2
+234	4	2022-05-22 10:44:24.65622	2022-02-22 15:43:34.848218	13	2
+235	4	2022-05-22 10:44:24.65622	2022-02-22 15:43:39.307026	14	2
+236	5	2022-05-22 10:44:24.65622	2022-02-22 15:43:42.357231	15	2
+392	4	2022-06-04 14:53:08.44759	2022-06-04 14:55:02.468727	39	2
+394	3	2022-06-04 14:53:08.44759	2022-06-04 14:55:05.767068	41	2
+395	3	2022-06-04 14:53:08.44759	2022-06-04 14:55:06.434443	42	2
+396	4	2022-06-04 14:53:08.44759	2022-06-04 14:55:07.886763	43	2
+354	4	2022-06-04 14:53:08.44759	2022-01-04 14:54:08.294189	1	2
+393	5	2022-06-04 14:53:08.44759	2022-06-04 14:55:03.988327	40	2
+397	4	2022-06-04 14:53:08.44759	2022-06-04 14:55:08.929313	44	2
+355	2	2022-06-04 14:53:08.44759	2022-02-04 14:54:09.957204	2	2
+356	4	2022-06-04 14:53:08.44759	2022-03-04 14:54:11.406512	3	2
+357	2	2022-06-04 14:53:08.44759	2022-04-04 14:54:12.959481	4	2
+358	3	2022-06-04 14:53:08.44759	2022-01-04 14:54:15.862155	5	2
+359	4	2022-06-04 14:53:08.44759	2022-02-04 14:54:17.587636	6	2
+360	2	2022-06-04 14:53:08.44759	2022-03-04 14:54:19.385137	7	2
+361	2	2022-06-04 14:53:08.44759	2022-04-04 14:54:20.054135	8	2
+362	4	2022-06-04 14:53:08.44759	2022-01-04 14:54:21.956693	9	2
+363	4	2022-06-04 14:53:08.44759	2022-02-04 14:54:22.860415	10	2
+364	3	2022-06-04 14:53:08.44759	2022-03-04 14:54:24.438207	11	2
+365	3	2022-06-04 14:53:08.44759	2022-04-04 14:54:24.972191	12	2
+366	5	2022-06-04 14:53:08.44759	2022-01-04 14:54:26.417827	13	2
+367	5	2022-06-04 14:53:08.44759	2022-02-04 14:54:27.501038	14	2
+368	2	2022-06-04 14:53:08.44759	2022-03-04 14:54:29.615851	15	2
+369	2	2022-06-04 14:53:08.44759	2022-04-04 14:54:30.322544	16	2
+370	2	2022-06-04 14:53:08.44759	2022-01-04 14:54:30.989804	17	2
+371	4	2022-06-04 14:53:08.44759	2022-02-04 14:54:32.621606	18	2
+372	4	2022-06-04 14:53:08.44759	2022-03-04 14:54:33.122559	19	2
+373	4	2022-06-04 14:53:08.44759	2022-04-04 14:54:33.693788	20	2
+374	3	2022-06-04 14:53:08.44759	2022-01-04 14:54:35.438686	21	2
+375	5	2022-06-04 14:53:08.44759	2022-02-04 14:54:37.211019	22	2
+376	5	2022-06-04 14:53:08.44759	2022-03-04 14:54:37.753392	23	2
+377	3	2022-06-04 14:53:08.44759	2022-04-04 14:54:39.703258	24	2
+378	1	2022-06-04 14:53:08.44759	2022-01-04 14:54:41.922059	25	2
+379	5	2022-06-04 14:53:08.44759	2022-02-04 14:54:44.208922	26	2
+380	3	2022-06-04 14:53:08.44759	2022-03-04 14:54:46.569909	27	2
+381	3	2022-06-04 14:53:08.44759	2022-04-04 14:54:48.390437	28	2
+382	4	2022-06-04 14:53:08.44759	2022-01-04 14:54:49.828505	29	2
+383	3	2022-06-04 14:53:08.44759	2022-02-04 14:54:51.372482	30	2
+384	4	2022-06-04 14:53:08.44759	2022-03-04 14:54:53.554507	31	2
+385	4	2022-06-04 14:53:08.44759	2022-04-04 14:54:54.168384	32	2
+386	3	2022-06-04 14:53:08.44759	2022-01-04 14:54:55.969362	33	2
+387	3	2022-06-04 14:53:08.44759	2022-02-04 14:54:56.585125	34	2
+388	5	2022-06-04 14:53:08.44759	2022-03-04 14:54:58.238286	35	2
+389	5	2022-06-04 14:53:08.44759	2022-04-04 14:54:58.870834	36	2
+390	3	2022-06-04 14:53:08.44759	2022-01-04 14:55:00.504941	37	2
+391	3	2022-06-04 14:53:08.44759	2022-02-04 14:55:01.124497	38	2
+\.
+
+
+--
+-- TOC entry 3488 (class 0 OID 17547)
+-- Dependencies: 231
+-- Data for Name: big_five_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.big_five_question (id, display_question, is_reverse, tag) FROM stdin;
+1	Talks a lot	f	extraversion
+2	Notices other people's weak points	t	agreeablenes
+3	Does things carefully and completely	f	conscientiousness
+4	Is sad, depressed	f	neuroticism
+5	Is original, comes up with new ideas	f	openness
+6	Keeps their thoughts to themselves	t	extraversion
+7	Is helpful and not selfish with others	f	agreeablenes
+8	Can be kind of careless	t	conscientiousness
+9	Is relaxed, handles stress well	t	neuroticism
+10	Is curious about lots of different things	f	openness
+11	Has a lot of energy	f	extraversion
+12	Starts arguments with others	t	agreeablenes
+13	Is a good, hard worker	f	conscientiousness
+14	Can be tense; not always easy going	f	neuroticism
+15	Clever; thinks a lot	f	openness
+16	Makes things exciting	f	extraversion
+17	Forgives others easily	f	agreeablenes
+18	Isn't very organized	t	conscientiousness
+19	Worries a lot	f	neuroticism
+20	Has a good, active imagination	f	openness
+21	Tends to be quiet	t	extraversion
+22	Usually trusts people	f	agreeablenes
+23	Tends to be lazy	t	conscientiousness
+24	Doesn't get upset easily; steady	t	neuroticism
+25	Is creative and inventive	f	openness
+26	Has a good, strong personality	f	extraversion
+27	Can be cold and distant with others	t	agreeablenes
+28	Keeps working until things are done	f	conscientiousness
+29	Can be moody	f	neuroticism
+30	Likes artistic and creative experiences	f	openness
+31	Is kind of shy	t	extraversion
+32	Kind and considerate to almost everyone	f	agreeablenes
+33	Does things quickly and carefully	f	conscientiousness
+34	Stays calm in difficult situations	t	neuroticism
+35	Likes work that is the same every time	t	openness
+36	Is outgoing; likes to be with people	f	extraversion
+37	Is sometimes rude to others	t	agreeablenes
+38	Makes plans and sticks to them	f	conscientiousness
+39	Get nervous easily	f	neuroticism
+40	Likes to think and play with ideas	f	openness
+41	Doesn't like artistic things (plays, music)	t	openness
+42	Likes to cooperate; goes along with others	f	agreeablenes
+43	Has trouble paying attention	t	conscientiousness
+44	Knows a lot about art, music and books	f	openness
+\.
+
+
+--
+-- TOC entry 3466 (class 0 OID 17319)
+-- Dependencies: 209
+-- Data for Name: binary_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.binary_work_question (no_label, not_sure_label, statements, yes_label, binary_id) FROM stdin;
+Nope	Not yet...	...given a colleague feedback?|...asked for feedback from a colleague?	Yes	1
+Nope	Not sure	sense of personal fulfilment|sense of professional fulfilment|skills AND interests	Yes	2
+No	No opinion	...age|...ethnicity|...sexual orientation|...gender|...education	Yes	3
+No	Will do...	Surprised someone with treats|Said 'good morning' to everyone|Hugged my favrouite colleague|Made someone laugh|Paid a compliment to an awesome colleague	Yes!	4
+No	Not sure	ask for feedback|give feedback|ask silly questions|brainstorm together	Yes	5
+No	Neither	...stressful conflicts|...harassment and discrimination|...ignorant behavior	Absolutely	6
+Never	Sometimes	I am on time|I test technology beforehand|I have the webcam on|I welcome everyone if I am the host|I have a clear agenda|I focus on the meeting|I contribute actively	Always	7
+Nobody	A few	...ask colleagues for help|...be open with your opinions?|...laugh with your colleagues?|...tell what their individual strengths are?	Everyone	8
+No	Not sure	Constantly progressing|I'll be able to reach my full potential|I have someone who provides career guidance	Yes	9
+No	Not sure	Laugh with your colleagues|Be yourself|Ask for help|Speak your mind|Feel safe and secure	Yes	10
+No		High quality of the material|Received the material in time	Yes	11
+No	Not sure	...'walks the talk'|...is honest & ethical|...is transparent|...explains the reasons behind key decisions	Yes	12
+\.
+
+
+--
+-- TOC entry 3490 (class 0 OID 17594)
+-- Dependencies: 233
+-- Data for Name: chat_message; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.chat_message (id, question, reply, "timestamp", score) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3492 (class 0 OID 17603)
+-- Dependencies: 235
+-- Data for Name: conversation; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.conversation (id, end_time_stamp, messages, start_timestamp, user_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3467 (class 0 OID 17326)
+-- Dependencies: 210
+-- Data for Name: dilemma_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.dilemma_work_question (max_emoji, max_label, min_emoji, min_label, dilemma_id) FROM stdin;
+message-cog-outline	Too much	chat-remove-outline	Too little	13
+arm-flex-outline	Absolutely	head-question-outline	Not at all	14
+lightbulb-on-outline	Yes, absolutely	bomb	Not at all	15
+diamond-stone	Very likely	thumb-down-outline	Unlikely	16
+account-group-outline	Agree	bomb	Disagree	17
+rabbit	Easter bunny is my middle name	tortoise	Watcha mean 'egg'?	18
+rabbit	Efficient	tortoise	Messages/Chats	19
+hand-peace	Absolutely	bomb	Not at all	20
+hand-peace	In control	bomb	Chaos	21
+arrow-decision	Yes!	tortoise	No!	22
+chart-line	Yes!	head-question-outline	No!	23
+brain	Strongly agree	weather-snowy-rainy	Strongly disagree	24
+battery-charging-high	Always	sleep	Never	25
+diamond-stone	I've felt very special	spider	Nobody seems to notice me	26
+bullseye-arrow	Right on target	binoculars	Far away...	27
+food-apple	Respectfully	spider	Unrespectfully	28
+diamond-stone	Towards success	bomb	Towards the end	29
+airplane	No, it's on the right level	anchor	Yes, I'm drowning in information	30
+bullseye-arrow	Yes	call-split	No	31
+bullseye-arrow	Clear	head-question-outline	Unclear	32
+puzzle	Too challenging	toy-brick	Too easy	33
+bullseye-arrow	Couldn't be closer	binoculars	Very far from	34
+\.
+
+
+--
+-- TOC entry 3468 (class 0 OID 17333)
+-- Dependencies: 211
+-- Data for Name: free_text_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.free_text_work_question (free_text_id) FROM stdin;
+35
+36
+37
+38
+39
+40
+41
+42
+\.
+
+
+--
+-- TOC entry 3469 (class 0 OID 17338)
+-- Dependencies: 212
+-- Data for Name: growing_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.growing_work_question (icon, id) FROM stdin;
+diamond-stone	43
+emoticon-happy-outline	44
+emoticon-happy-outline	45
+arm-flex-outline	46
+brain	47
+account-group	48
+heart	49
+arm-flex-outline	50
+heart	51
+account-group	52
+account-group	53
+account-group	54
+heart	55
+emoticon-happy-outline	56
+emoticon-happy-outline	57
+\.
+
+
+--
+-- TOC entry 3470 (class 0 OID 17343)
+-- Dependencies: 213
+-- Data for Name: map_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.map_work_question (max_horizontal_emoji, max_horizontal_label, max_vertical_emoji, max_vertical_label, min_horizontal_emoji, min_horizontal_label, min_vertical_emoji, min_vertical_label, map_id) FROM stdin;
+lightbulb-on-outline	We often try new things	thumb-up-outline	Excellent	tortoise	It's mostly repetition	thumb-down-outline	Very bad	100
+bullseye-arrow	Crystal clear role	book-outline	Manageable workload	emoticon-confused-outline	Vague responsibilites	book-multiple-outline	Too much to do	101
+arm-flex-outline	Feeling engaged	weather-sunny	Take us the right way	sleep	Couldn't care less	bomb	Take us the wrong way	102
+yoga	In control	weather-sunny	Having fun	bomb	Chaos	weather-pouring	Miserable	103
+bullseye-arrow	The 'right' things	book-multiple-outline	Very productive	trash-can-outline	The 'wrong' things	book-outline	Not productive at all	104
+\.
+
+
+--
+-- TOC entry 3472 (class 0 OID 17355)
+-- Dependencies: 215
+-- Data for Name: rater_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.rater_work_question (allow_own_words, no_of_choices, predefined_words, rater_id) FROM stdin;
+t	7	None, I'm all set!|Webtraining|Classroom training|Workshop with colleagues|A written guide|Support in result discussions|Some time to explore it	62
+t	7		63
+f	7	Colleagues|Work environment|Management|Internal IT systems|Printer|My computer|Clients|Customers|My tasks|My phone|Bureaucracy|Incompetence|Vague targets|Working schedule|Coffee machine|Inefficiency|Illness	64
+t	7	Communicate|Set the direction|Practice what they preach|Inform|Spread energy|Generate profit|Run the business|Knowledge sharing|See the whole picture|See the individual|Reward good behaviour|Comment on bad behaviour|Change management|Equal opportunities|Collaboration|Create synergies	65
+t	7	Clear goals|Recognition|Communication|Personal growth|Trust in leaders|Respect|Pride in work|Learning|Work-life balance|Stability|Career opportunities|Compensation|Challenges|Independence|Variation|Team spirit|Joy|Safety|Creative tasks|Feedback	66
+f	6	Traveling|Health and wellbeing|Purchase|Production|Power consumption|Equality and diversity|Waste disposal|The supply chain	67
+t	7	My colleagues|Positive feedback|Learning new things|Got a lot done|Reached a target|Made a breakthrough|Great creativity|Social activity|Celebrated success|Our customers	68
+t	7	Listen better|More feedback|Help each other|Share results|Social activities|Eat lunch together|Challenge each other	69
+t	7	Lack of time|Bad atmosphere|My manager|No control|Vague targets|Unclear responsibilities|Too high expectations|Lack of mandate|Weak skills	70
+\.
+
+
+--
+-- TOC entry 3496 (class 0 OID 17629)
+-- Dependencies: 239
+-- Data for Name: recommendations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.recommendations (id, article_title, articleurl, quote, user_id) FROM stdin;
+2	How to change your habits...	https://health.gov/myhealthfinder/topics/doctor-visits/screening-tests/talk-your-doctor-about-depression	https://www.thetrendspotter.net/wp-content/uploads/2022/02/Inspirational-Quotes-About-Life.jpg	2
+\.
+
+
+--
+-- TOC entry 3473 (class 0 OID 17360)
+-- Dependencies: 216
+-- Data for Name: slider_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.slider_work_question (no_label, not_sure_label, statements, yes_label, slider_id) FROM stdin;
+Never	Neither	...organizational changes|...what other groups are working on|...business goals	Always	71
+Bad	Neither	...within your team/group|...within the entire company|...with external partners	Great	72
+Not at all		...has clear expectations of me|...clearly sets the scope of my responsibilites|...takes action when I have too much to do	Absolutely	73
+Not at all		Our vision|Our values|Our policies	Very well	74
+Not at all		...our products & services|...to be a member of my team|...my contribution	Completely	75
+None		Work stuff|Santa stuff|No stuff at all	You bet	76
+Never		...it's clear what's expected of me|...I feel supported by my colleagues	Always	77
+Not at all	Neither	Healthy|Happy with everyday life	Great	78
+\.
+
+
+--
+-- TOC entry 3474 (class 0 OID 17367)
+-- Dependencies: 217
+-- Data for Name: super_binary_work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.super_binary_work_question (super_binary_id) FROM stdin;
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+\.
+
+
+--
+-- TOC entry 3494 (class 0 OID 17617)
+-- Dependencies: 237
+-- Data for Name: user_analysis; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.user_analysis (id, score, time_stamp, user_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3476 (class 0 OID 17373)
+-- Dependencies: 219
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.users (id, email, email_verified, image_url, is_admin_blocked, is_login_blocked, name, password, provider, provider_id, reset_key, role) FROM stdin;
+5	admin@gmail.com	f	\N	f	f	Dean John	$2a$10$x0drGcSn0UMT7s.Exd687u4IRfVP0clAGaLD8AbpxV69K0Zhy07lG	local	\N	\N	WORK_OWNER
+1	pratikmsavla1999@gmail.com	f	https://lh3.googleusercontent.com/a-/AOh14GhNdIo1wgFgT1lyhoocmfgte5aNYhZCx0DIkmuu1g=s96-c	f	f	Rachel	\N	google	115216891350485978318	\N	WORK_USER
+3	admin@mail.com	t	\N	f	t	Tony Stark	$2a$10$wbUSi.c5lenRMc3yELxnTe/Sw9IbAJEtC0yfVhUEWBgj4fs0ITzxi	local	\N	\N	ADMIN_USER
+16	life1@mail.com	f	\N	f	t	Andy Bernard	$2a$10$tpevSzNF1AZKSfK.v./YOecPG2ghoa/pJshK5sDfe6uW8NwxtAz8e	local	\N	D2VpAusQ	LIFE_USER
+17	pratiksavla07@gmail.com	f	\N	f	t	Michel Ross	$2a$10$gZhcxwYuxWx27VTDW9cr1eACT7XONBVA4PIipmwy3.Dmq/pVMGmkm	local	\N	L6zzPl@R	LIFE_USER
+2	user@mail.com	t	https://res.cloudinary.com/pratik-savlastore/image/upload/v1655015213/freudas/io3in4ab3usnnxd4e8gv.jpg	f	t	Chandler	$2a$10$SobCmDoMijlNVAwqnoVB4OHyZbPnMb4FY4RvHGqaABXHI9uLP9Jyi	local	\N	\N	LIFE_USER
+\.
+
+
+--
+-- TOC entry 3481 (class 0 OID 17467)
+-- Dependencies: 224
+-- Data for Name: work_provider; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.work_provider (id, company_name, domain, is_admin_blocked, loginurl, provider, owner_id) FROM stdin;
+1	Google Inc	gmail.com	f	pass	google	5
+\.
+
+
+--
+-- TOC entry 3482 (class 0 OID 17475)
+-- Dependencies: 225
+-- Data for Name: work_provider_prefered_tags; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.work_provider_prefered_tags (work_provider_id, prefered_tags_id) FROM stdin;
+\.
+
+
+--
+-- TOC entry 3479 (class 0 OID 17387)
+-- Dependencies: 222
+-- Data for Name: work_question; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.work_question (id, display_question) FROM stdin;
+1	During the week, have you...
+2	The work I do matches my...
+3	Employees get an equal treatment irrespective of...
+4	Have you done this during the week?
+5	In my team, I feel comfortable to...
+6	Our workplace is free from...
+7	How do you contribute to creating good online meetings?
+8	Are you a closely knit team at work, i.e. can you...
+9	What is true about your professional development at {{COMPANYNAME}}?
+10	In your team today, can you...
+11	How would you rate the pre-read sent out prior to the meeting?
+12	In my opinion, my manager...
+13	How would you rate the feedback you get from your direct manager?
+14	I know what is expected of me at work
+15	Do you perceive a clear and communicated action plan for our Change project?
+16	How likely are you to recommend {{COMPANYNAME}} to a friend? 
+17	If I make a mistake, my team doesn't hold it against me
+18	How many easter eggs are you handing out this year?
+19	What do you find most important regarding the executive team's decision making?
+20	My workplace is free from draining conflicts
+21	Describe your situation at work the previous 2 weeks
+22	Our team has an effective decision-making process.
+23	I understand how our team's work contributes to the organization's goals.
+24	It's easy to express your thoughts and ideas in our workplace
+25	Do you get enough recovery between your shifts?
+26	How much recognition have you received over the past weeks?
+27	Imagine the perfect board! How close to that ideal is this board today?
+28	How would you say we treat each other at work?
+29	What direction is {{COMPANYNAME}} moving in?
+30	Is the onboarding too overwhelming for you?
+31	Do you find your goals to be in line with what you are measured on in our Change project?
+32	I feel that the communication about {{COMPANYNAME}}'s sustainability work is...
+33	How do you perceive this week's tasks, in relation to your skills?
+34	Imagine the perfect place to work. How close to this ideal does {{COMPANYNAME}} feel today?
+35	If there was one thing you would change about your onboarding, what would it be?
+36	How do you think our business is going to change in the future? What challenges will we face?
+37	What motivated you this month?
+38	What motivated you this week? Big or small :)
+39	If you had a magic wand, which kind of perks would you wish for?
+40	If we choose to implement Freudas, do you have any good advice going forward?
+41	Who in your team do you want to give a "high five" for a great work this month?
+42	Finally Friday! Take a few minutes to reflect on this week and plan for the next one. Have a nice weekend!
+43	I feel valued at work
+44	I like my work at this very point in time
+45	Have you noticed positive change since we started collecting more frequent feedback?
+46	I feel motivated in working with the board!
+47	Nobody rejects people who think or act differently
+48	I am very satisfied with my manager
+49	We dare to discuss topics that may be perceived as difficult; such as worries and insecurities
+50	People around me are willing to walk the extra mile to get the job done
+51	{{COMPANYNAME}}'s vision inspires me 
+52	Have your new colleagues made you feel welcome?
+53	We have a good collaborative climate at our workplace
+54	Did we make you feel welcome on your first day?
+55	There's a good atmosphere at work
+56	Doing my job well gives me a sense of personal satisfaction
+57	Right now, how satisfied are you as an employee at {{COMPANYNAME}}?
+62	Which additional support do you need to feel comfortable using Freudas?
+63	What made you really proud this week? Feel free to add your own words!
+64	What annoyed you this week?
+65	What do you think the management team should improve?
+66	Is there anything you lack at work?
+67	What areas do you think {{COMPANYNAME}} should focus on in order to have the greatest impact on our sustainability work?
+68	What were this week's highlights?
+69	How can we increase the team spirit in our group?
+70	What stresses you at work?
+71	Do you get information in time about...
+72	How does the collaboration work...
+73	My manager / teamleader...
+74	How well do you know...
+75	I am proud of...
+76	How will you spend your Holiday this year?
+77	When it comes to my work tasks...
+78	How are you feeling?
+79	As an organization, do we have a higher purpose than just profit?
+80	Do you believe in Santa?
+81	Are you able to fulfill your responsibilities at work during your normal working hours?
+82	Has your team discussed how your objectives support the overall company goals?
+83	Do you know about {{COMPANYNAME}}'s sustainability work?
+84	With your eyes closed, can you recite our vision?
+85	Thumbs up if you are ready for a few questions about our Change project!
+86	Have you challenged yourself in any way this last month?
+87	Are you given the opportunity to grow & develop?
+88	I can see positive effects of the change
+89	My manager handles conflicts well
+90	So far, is the job what you expected it to be?
+91	We care about each other in our team
+92	Our organization has strong purpose
+93	I understand the background and rational behind the change
+94	In your opinon, should we implement Freudas as a part of our way of working?
+95	Have you asked your manager for feedback this week?
+96	I have a sufficiently clear picture of where we are heading in this change
+97	Would you recommend your manager to a friend?
+98	You've been working hard! Take ten minutes to reward yourself.
+99	I have someone to go to when I need to ask for help
+100	Describe the innovation climate at {{COMPANYNAME}}
+101	Describe your workload and management expectations
+102	Describe your thoughts around {{COMPANYNAME}}'s change project
+103	Describe your situation at work
+104	How productive are you on a typical day this week?
+\.
+
+
+--
+-- TOC entry 3477 (class 0 OID 17381)
+-- Dependencies: 220
+-- Data for Name: work_question_tag; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.work_question_tag (work_question_id, tag_id) FROM stdin;
+1	57
+1	5
+1	9
+2	48
+2	3
+2	53
+3	37
+3	12
+3	64
+3	6
+3	30
+4	3
+4	9
+5	7
+5	42
+5	51
+6	37
+6	12
+6	64
+6	30
+7	50
+7	71
+8	7
+8	45
+8	49
+8	12
+8	51
+9	3
+9	12
+10	7
+10	45
+10	49
+10	37
+10	12
+10	70
+10	30
+11	7
+11	50
+11	47
+12	12
+12	6
+13	10
+13	57
+13	6
+13	5
+13	55
+14	10
+14	6
+14	3
+15	32
+16	61
+16	10
+16	2
+16	38
+16	1
+17	7
+17	42
+17	70
+18	28
+19	2
+19	12
+19	6
+19	59
+19	41
+20	10
+20	30
+21	10
+21	27
+21	30
+21	32
+22	7
+22	42
+23	2
+23	44
+24	70
+25	10
+25	27
+25	30
+25	8
+26	10
+26	5
+27	10
+27	47
+28	7
+28	37
+28	10
+28	45
+28	64
+28	49
+29	10
+29	2
+29	44
+29	32
+30	10
+30	33
+31	32
+32	2
+33	10
+33	52
+33	3
+33	30
+34	10
+34	2
+35	12
+35	33
+36	32
+36	2
+36	12
+37	3
+37	43
+37	2
+37	12
+38	3
+38	43
+38	2
+38	12
+39	5
+39	62
+39	12
+40	46
+40	12
+41	5
+41	28
+41	9
+41	49
+41	7
+41	51
+41	63
+42	3
+42	9
+42	53
+43	5
+43	62
+43	10
+44	2
+44	43
+44	10
+45	5
+45	12
+45	46
+46	10
+46	47
+47	42
+47	64
+47	10
+47	70
+47	45
+48	6
+48	10
+49	70
+50	43
+50	10
+50	7
+51	2
+51	10
+51	44
+52	33
+52	10
+53	42
+53	7
+54	33
+54	10
+55	49
+55	10
+55	30
+55	7
+56	2
+56	3
+56	10
+57	2
+57	10
+62	12
+62	46
+63	12
+63	1
+64	12
+64	43
+64	52
+65	12
+65	41
+66	12
+66	2
+67	2
+68	8
+68	9
+69	12
+69	51
+69	7
+69	45
+70	12
+70	8
+70	30
+70	27
+71	56
+71	32
+71	59
+71	42
+71	6
+71	12
+72	7
+72	10
+72	42
+72	49
+73	30
+73	6
+73	12
+74	33
+74	44
+74	12
+75	1
+75	12
+76	28
+77	7
+77	3
+77	49
+77	12
+77	52
+78	8
+78	10
+79	44
+79	2
+79	45
+79	48
+79	41
+80	28
+81	8
+81	30
+81	10
+82	44
+82	59
+82	2
+82	10
+83	2
+84	44
+84	2
+84	10
+85	32
+86	40
+86	53
+86	3
+86	10
+87	3
+87	10
+88	32
+88	10
+89	6
+89	30
+89	10
+90	33
+90	10
+91	49
+91	7
+91	64
+91	70
+91	10
+92	44
+92	2
+92	48
+92	10
+93	32
+93	10
+94	46
+95	5
+95	6
+95	57
+95	9
+96	32
+96	10
+97	38
+97	6
+97	10
+98	8
+98	9
+99	33
+99	10
+100	45
+100	40
+100	10
+101	27
+101	44
+101	12
+101	30
+102	32
+102	10
+103	32
+103	8
+103	30
+103	10
+104	52
+104	3
+104	10
+\.
+
+
+--
+-- TOC entry 3484 (class 0 OID 17496)
+-- Dependencies: 227
+-- Data for Name: work_user_question_answer; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.work_user_question_answer (id, answer, date_time_added, date_time_answered, remarks, skipped, question_id, user_id) FROM stdin;
+1	73.28571428571429	2022-03-01 18:23:55.275106	2022-02-01 18:28:14.632655	88|78|21|88|88|100|50	f	7	1
+2	100	2022-03-01 18:23:55.312762	2022-02-03 18:28:16.506627	true	f	96	1
+3	-1	2022-03-01 18:23:55.315763	2022-01-01 18:28:23.849374	More feedback|Listen better|Social activities|Share results|Eat lunch together|Challenge each other|Help each other	f	69	1
+4	70.33333333333333	2022-03-01 18:23:55.320762	2022-01-01 18:28:29.257345	84|34|93	f	73	1
+5	89.66666666666667	2022-03-01 18:23:55.324761	2022-02-25 18:28:34.478938	79|97|93	f	77	1
+6	87	2022-03-01 18:24:05.413762	2022-02-21 18:28:37.920936	87	f	33	1
+7	100	2022-03-01 18:24:05.416761	2022-01-01 18:28:39.668936	true	f	94	1
+8	-1	2022-03-01 18:24:05.419762	2022-02-15 18:29:07.191724	No. The answer is already long enough	f	40	1
+9	94	2022-03-01 18:24:05.421763	2022-01-04 18:29:10.998724	94	f	53	1
+10	85	2022-03-01 18:24:05.424761	2022-01-03 18:29:15.543727	85	f	34	1
+11	44.75	2022-03-01 18:24:15.516763	2022-02-21 18:29:20.910729	82|25|33|39	f	12	1
+12	88	2022-03-01 18:24:15.519762	2022-03-02 18:29:23.465725	88	f	19	1
+13	25	2022-03-01 18:24:15.521763	2022-03-02 18:29:26.135725	25	f	24	1
+14	100	2022-03-01 18:24:15.523764	2022-03-02 18:29:27.898771	true	f	94	1
+15	68	2022-03-01 18:24:15.525763	2022-03-02 18:29:34.427694	79|70|22|69|100	f	3	1
+16	-1	2022-03-02 18:01:56.738475	2022-03-02 18:03:47.113078	Hello this	f	104	1
+17	0	2022-03-02 18:01:56.938475	2022-03-02 18:04:05.912328	false	f	97	1
+18	-1	2022-03-02 18:01:56.941482	2022-03-02 18:06:01.609468	\N	t	29	1
+19	65	2022-03-02 18:01:56.944476	2022-03-02 18:06:11.629126	65	f	26	1
+20	24	2022-03-02 18:01:56.946477	2022-03-02 18:06:22.839128	24	f	13	1
+21	86	2022-03-02 18:02:07.053468	2022-03-02 18:10:07.322538	v:91|h:81	f	104	1
+22	100	2022-03-02 18:02:07.056467	2022-03-02 18:10:13.938801	true	f	88	1
+23	-1	2022-03-02 18:02:07.059468	2022-03-02 18:10:34.053697	asdasdadddasdasdasdads asdasd asdadsasdasd	f	39	1
+24	100	2022-03-02 18:02:07.06247	2022-03-02 18:12:37.064622	true	f	99	1
+25	-1	2022-03-02 18:02:07.065483	2022-03-02 18:19:36.158023	\N	t	73	1
+\.
+
+
+--
+-- TOC entry 3471 (class 0 OID 17350)
+-- Dependencies: 214
+-- Data for Name: wquestion_tag; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wquestion_tag (id, tag) FROM stdin;
+60	Ambassadorship
+61	Loyalty
+1	Pride
+27	Stress
+48	Purpose
+32	Change
+44	Goals
+45	Culture
+2	Alignment
+12	Depth
+64	Respect
+65	Worklife balance
+28	Fun
+30	Working conditions
+8	Wellbeing
+40	Innovation
+9	Action
+53	Self leadership
+71	Remote work
+49	Colleagues
+50	Meetings
+51	Team spirit 
+42	Cooperation
+7	Collaboration
+56	Communication
+43	Engagement
+41	Top management
+58	Work allocation
+55	Dialogue
+54	Training
+57	Feedback
+59	Involvement
+47	Board work
+6	Leadership
+70	Psychological safety
+33	Onboarding
+52	Productivity
+3	Development
+10	Tracking
+62	Benefits
+63	Celebration
+5	Recognition
+68	Freudas engagement
+69	Freudas theme
+46	Freudas evaluation
+38	Pension
+37	Metoo
+\.
+
+
+--
+-- TOC entry 3512 (class 0 OID 0)
+-- Dependencies: 228
+-- Name: big_five_answer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.big_five_answer_id_seq', 397, true);
+
+
+--
+-- TOC entry 3513 (class 0 OID 0)
+-- Dependencies: 230
+-- Name: big_five_question_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.big_five_question_id_seq', 44, true);
+
+
+--
+-- TOC entry 3514 (class 0 OID 0)
+-- Dependencies: 232
+-- Name: chat_message_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.chat_message_id_seq', 1, false);
+
+
+--
+-- TOC entry 3515 (class 0 OID 0)
+-- Dependencies: 234
+-- Name: conversation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.conversation_id_seq', 1, false);
+
+
+--
+-- TOC entry 3516 (class 0 OID 0)
+-- Dependencies: 238
+-- Name: recommendations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.recommendations_id_seq', 2, true);
+
+
+--
+-- TOC entry 3517 (class 0 OID 0)
+-- Dependencies: 236
+-- Name: user_analysis_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_analysis_id_seq', 1, false);
+
+
+--
+-- TOC entry 3518 (class 0 OID 0)
+-- Dependencies: 218
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.users_id_seq', 17, true);
+
+
+--
+-- TOC entry 3519 (class 0 OID 0)
+-- Dependencies: 223
+-- Name: work_provider_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.work_provider_id_seq', 7, true);
+
+
+--
+-- TOC entry 3520 (class 0 OID 0)
+-- Dependencies: 221
+-- Name: work_question_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.work_question_id_seq', 104, true);
+
+
+--
+-- TOC entry 3521 (class 0 OID 0)
+-- Dependencies: 226
+-- Name: work_user_question_answer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.work_user_question_answer_id_seq', 25, true);
+
+
+-- Completed on 2022-06-18 17:23:02
+
+--
+-- PostgreSQL database dump complete
+--
+
